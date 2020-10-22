@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clean Background Video</title>
+    <link href="css/clean-background-video.min.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body class="clean-background-video1" data-background-video>
+    <video loop autoplay muted playsinline>
+      <source src="video/test.mp4" type="video/mp4">
+      <source src="video/test.webm" type="video/webm">
+      <source src="video/test.ogv" type="video/ogv">
+        Your browser doesn't support the video element
+    </video>
+
+    <!--
+    <div class="clean-background-video" data-background-video>
+      <video loop autoplay muted playsinline>
+        <source src="video/test.mp4" type="video/mp4">
+        <source src="video/test.webm" type="video/webm">
+        <source src="video/test.ogv" type="video/ogv">
+          Your browser doesn't support the video element
+      </video>
+    </div>
+
+    <div class="clean-background-video" data-background-video>
+      <video loop autoplay muted playsinline>
+        <source src="video/test.mp4" type="video/mp4">
+        <source src="video/test.webm" type="video/webm">
+        <source src="video/test.ogv" type="video/ogv">
+          Your browser doesn't support the video element
+      </video>
+    </div>
+
+    <div class="clean-background-video" data-background-video>
+      <video loop autoplay muted playsinline>
+        <source src="video/test.mp4" type="video/mp4">
+        <source src="video/test.webm" type="video/webm">
+        <source src="video/test.ogv" type="video/ogv">
+          Your browser doesn't support the video element
+      </video>
+    </div>
+
+    <div class="clean-background-video" data-background-video>
+      <video loop autoplay muted playsinline>
+        <source src="video/test.mp4" type="video/mp4">
+        <source src="video/test.webm" type="video/webm">
+        <source src="video/test.ogv" type="video/ogv">
+          Your browser doesn't support the video element
+      </video>
+    </div>
+    -->
+
+  <script src="js/clean-background-video.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var element = document.querySelectorAll('.clean-background-video1');
+      var cleanBackgroundVideo = new CleanBackgroundVideo(element);
+    });
+  </script>
+  </body>
+</html>
