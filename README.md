@@ -1,4 +1,4 @@
-![Pixelcoulee Logo](https://siasky.net/CAAk1s1Tp9-H7uD2451VkcY-GioOLo_kudmSrvU-DH2aOQ =250x)
+![Pixelcoulee Logo](https://siasky.net/CABSlhia-9jkYZwMy-pVYkvIPnVATP9BImVwMZ2A6QdElA)
 
 # CleanBackgroundVideo
 A minimal, efficient, vanilla JavaScript background video plugin. Only 3KB total!
