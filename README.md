@@ -42,10 +42,12 @@ The `new CleanBackgroundVideo()` instruction you execute on your page can take t
 
 | Parameter | What to pass | Required | Default value | Type |
 | --------- | ------------ | -------- | ------------- | ---- |
-| Element | The clean accordion DOM element/s | Yes | `null` | Dom Element |
+| Element | The CleanBackgroundVideo DOM element/s | Yes | `null` | Dom Element |
 | Options | The option object for this instance of CleanBackgroundVideo | No | `{}` | Plain Object |
 
-## Full Page Background Video
+## Examples
+
+### Full Page Background Video
 ```
 <body class="clean-background-video" [data-background-video]>
   <video loop autoplay muted playsinline poster="">
