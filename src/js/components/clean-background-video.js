@@ -17,7 +17,7 @@ class CleanBackgroundVideo {
 
   init() {
     this.bindEvents();
-    this.setDimensions();;
+    this.setDimensions();
   }
 
   bindEvents() {

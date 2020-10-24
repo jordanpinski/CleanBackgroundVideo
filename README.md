@@ -16,7 +16,7 @@ Include the CSS/JS in your HTML.
 ## Basic Usage
 Add the required HTML & initialize.
 ```
-<div class="clean-background-video" data-background-video>
+<div data-background-video>
 
   <video loop autoplay muted playsinline poster="">
     <source src="video/test.mp4" type="video/mp4">
@@ -30,7 +30,7 @@ Add the required HTML & initialize.
 ```
 <script>
 
-  const elements = document.querySelectorAll('.clean-background-video');
+  const elements = document.querySelectorAll('[data-background-video]');
   const cleanBackgroundVideo = new CleanBackgroundVideo(elements);
 
 </script>
