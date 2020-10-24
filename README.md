@@ -7,10 +7,10 @@ A minimal, efficient, vanilla JavaScript background video plugin. Only 3KB total
 Include the CSS/JS in your HTML.
 
 ```
-<link href="css/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="css/clean-background-video.min.css" type="text/css" rel="stylesheet" />
 ```
 ```
-<script src='js/clean-accordion.min.js'></script>
+<script src='js/clean-background-video.min.js'></script>
 ```
 
 ## Basic Usage
