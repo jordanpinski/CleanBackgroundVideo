@@ -25,21 +25,33 @@ class CleanBackgroundVideo {
 
     this.cleanBackgroundVideos.forEach( (cleanBackgroundVideo) => {
       let video = cleanBackgroundVideo.querySelector('video');
-      video.addEventListener('canplay', (event) => { this.setLoaded(event) });
+      let playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise.then( () => {
+          this.setLoaded(null, video)
+        }).catch( (error) => {
+          console.log(error);
+        })
+      }
+
+      if (isIE11) {
+        this.setLoaded(null, video);
+      }
+
     })
   }
 
   /**
    * Sets the loaded classes on video elements.
    */
-  setLoaded(event) {
-    let video = event.target;
-    video.classList.add('background-video-loaded');
+  setLoaded(event, video = null) {
+    let tempVideo = event !== null ? event.target : video;
+    tempVideo.classList.add('background-video-loaded');
     this.setDimensions();
   }
 
   setDimensions() {
-    console.log('setting dimensions');
     this.cleanBackgroundVideos.forEach( (cleanBackgroundVideo) => {
       let video = cleanBackgroundVideo.querySelector('video');
       let width = cleanBackgroundVideo.clientWidth;
